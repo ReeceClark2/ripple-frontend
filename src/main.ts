@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Convert to Uint8Array for better browser compatibility
     const uint8Array = new Uint8Array(buffer);
   
-    fetch("http://127.0.0.1:3000/update", {
+    fetch("https://ripple-backend-4ksg.onrender.com/update", {
       method: "POST",
       headers: {
         "Content-Type": "application/octet-stream",
