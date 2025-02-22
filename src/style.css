@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: rgb(3, 79, 94);
+}
+canvas {
+  position: absolute;
+  background: rgb(3, 79, 94);
+  width: 100vw;
+  height: 100vh;
+}
