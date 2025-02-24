@@ -2,10 +2,17 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   server: {
-    port: Number(process.env.PORT) || 5173, // Render sets PORT dynamically
-    host: '0.0.0.0', // Required for Render to access the server
-  },
-  build: {
-    outDir: 'dist', // Ensure this matches what Render expects
-  },
+    host: '0.0.0.0', // Allows external access
+    port: 5173, // Set your frontend port
+    strictPort: true,
+    cors: true, // Ensure CORS is enabled if needed
+    proxy: {
+      '/api': {
+        target: 'https://ripple-8edg.onrender.com', // Your backend URL
+        changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/api/, '') // Adjust if necessary
+      }
+    }
+  }
 });
