@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     fetch("https://ripple-backend-4ksg.onrender.com/update", {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-Type": "application/octet-stream",
       },
