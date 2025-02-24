@@ -3,11 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-"scripts": {
-  "dev": "vite",
-  "build": "tsc && vite build",
-  "deploy": "vite preview",
-  "preview": "vite preview"
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "vite preview --port $PORT --host"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
