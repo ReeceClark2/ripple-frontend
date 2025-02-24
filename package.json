@@ -6,12 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "deploy": "npm run build",
+    "deploy": "dev",
     "preview": "vite preview"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "typescript": "~5.7.2",
     "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
   }
 }
