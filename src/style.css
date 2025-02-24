@@ -1,11 +1,11 @@
 body {
   margin: 0;
   overflow: hidden;
-  background: rgb(3, 79, 94);
+  background: rgb(0, 0, 0);
 }
 canvas {
   position: absolute;
-  background: rgb(3, 79, 94);
+  background: rgb(0, 0, 0);
   width: 100vw;
   height: 100vh;
 }

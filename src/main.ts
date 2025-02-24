@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  let true_width: number = 30;
-  let true_height: number = 30;
+  let true_width: number = 15;
+  let true_height: number = 15;
 
   canvas.width = true_width;
   canvas.height = true_height;
@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     console.log(x, y);
-    drawPixels();
   });
 
   function sendPixels() {
@@ -149,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       await sendPixels(); // Wait for the function to complete before proceeding
   
       const elapsedTime = performance.now() - startTime;
-      const waitTime = Math.max(300 - elapsedTime, 0);
+      const waitTime = Math.max(150 - elapsedTime, 0);
   
       await new Promise(resolve => setTimeout(resolve, waitTime)); // Ensure at least 100ms interval
     }
